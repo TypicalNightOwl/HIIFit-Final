@@ -8,54 +8,93 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @EnvironmentObject var historyStore: HistoryStore
     @State private var showHistory = false
+    @State private var showReports = false
     @Binding var selectedTab: Int
     
     var body: some View {
-        ZStack {
+        GeometryReader { geometry in
             VStack {
-                HeaderView(selectedTab: $selectedTab, titletext: "Welcome")
+                HeaderView(
+                    selectedTab: $selectedTab,
+                    titleText: "Welcome")
                 Spacer()
-                Button("History") {
-                    showHistory.toggle()
-                }
-                .sheet(isPresented: $showHistory){
-                    HistoryView(showHistory: $showHistory)
-                }
-                    .padding(.bottom)
-            }
-            
-            VStack{
-                HStack (alignment: .bottom){
-                    VStack(alignment: .leading) {
-                        Text("Get fit")
-                            .font(.largeTitle)
-                        Text("with high intensity interval training")
-                            .font(.headline)
-                    }
-                    Image("step-up")
-                        //.resizable()
-                        //.aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                        //.frame(width: 240.0, height: 240.0)
-                        .resizedToFill(width: 240, height: 240)
-                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                }
                 
-                Button(action: {selectedTab = 0}) {
-                    Text("Get Started")
-                    Image(systemName: "arrow.right.circle")
-                    
+                ContainerView {
+                    ViewThatFits {
+                        VStack {
+                            WelcomeView.images
+                            WelcomeView.welcomeText
+                            getStartedButton
+                            Spacer()
+                            buttonHStack
+                        }
+                        VStack {
+                            WelcomeView.welcomeText
+                            getStartedButton
+                            Spacer()
+                            buttonHStack
+                        }
+                    }
                 }
-                .font(.title2)
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.gray, lineWidth: 2))
+                .frame(height: geometry.size.height * 0.8)
+            }
+            .sheet(isPresented: $showHistory) {
+                HistoryView(showHistory: $showHistory)
+            }
+            .sheet(isPresented: $showReports) {
+                BarChartWeekView()
             }
         }
     }
+    
+    var getStartedButton: some View {
+        RaisedButton(buttonText: "Get Started") {
+            withAnimation {
+                selectedTab = 0
+            }
+        }
+        .padding()
+    }
+    
+    var buttonHStack: some View {
+        HStack(spacing: 40) {
+            historyButton
+            reportsButton
+        }
+        .padding(10)
+    }
+    
+    var historyButton: some View {
+        Button(
+            action: {
+                showHistory = true
+            }, label: {
+                Text("History")
+                    .fontWeight(.bold)
+                    .padding([.leading, .trailing], 5)
+            })
+        .padding(.bottom, 10)
+        .buttonStyle(EmbossedButtonStyle())
+    }
+    
+    var reportsButton: some View {
+        Button(
+            action: {
+                showReports = true
+            }, label: {
+                Text("Reports")
+                    .fontWeight(.bold)
+            })
+        .buttonStyle(EmbossedButtonStyle())
+    }
 }
+
+
+
 
 #Preview {
     WelcomeView(selectedTab: .constant(9))
+        .environmentObject(HistoryStore(preview: true))
 }

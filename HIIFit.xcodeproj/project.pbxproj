@@ -21,6 +21,15 @@
 		CF0D2E0D2C93390400B1F3C3 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D2E0C2C93390400B1F3C3 /* HistoryStore.swift */; };
 		CF0D2E102C933A7400B1F3C3 /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D2E0F2C933A7400B1F3C3 /* HistoryStoreDevData.swift */; };
 		CF0D2E122C93527700B1F3C3 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D2E112C93527700B1F3C3 /* SuccessView.swift */; };
+		CF32A35C2CA8560E0046203E /* WelcomeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32A35B2CA8560E0046203E /* WelcomeImages.swift */; };
+		CF32A35E2CA861140046203E /* RaisedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32A35D2CA861140046203E /* RaisedButton.swift */; };
+		CF32A3602CA86D980046203E /* EmbossedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32A35F2CA86D980046203E /* EmbossedButton.swift */; };
+		CF32A3622CA875080046203E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32A3612CA875080046203E /* ContainerView.swift */; };
+		CF32A3642CA879A10046203E /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32A3632CA879A10046203E /* GradientBackground.swift */; };
+		CF32A3672CA8D3D20046203E /* AddHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32A3662CA8D3D20046203E /* AddHistoryView.swift */; };
+		CF32A3692CA8DD410046203E /* BarChartDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32A3682CA8DD410046203E /* BarChartDayView.swift */; };
+		CF32A36B2CA8E7090046203E /* BarChartWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32A36A2CA8E7090046203E /* BarChartWeekView.swift */; };
+		CF383ADD2CA7727700CBF630 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF383ADC2CA7727700CBF630 /* TimerView.swift */; };
 		CFD0F1572C9257D5007C3985 /* HIIFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0F1562C9257D5007C3985 /* HIIFitApp.swift */; };
 		CFD0F1592C9257D5007C3985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0F1582C9257D5007C3985 /* ContentView.swift */; };
 		CFD0F15B2C9257D6007C3985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD0F15A2C9257D6007C3985 /* Assets.xcassets */; };
@@ -64,6 +73,15 @@
 		CF0D2E0C2C93390400B1F3C3 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
 		CF0D2E0F2C933A7400B1F3C3 /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
 		CF0D2E112C93527700B1F3C3 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		CF32A35B2CA8560E0046203E /* WelcomeImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeImages.swift; sourceTree = "<group>"; };
+		CF32A35D2CA861140046203E /* RaisedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisedButton.swift; sourceTree = "<group>"; };
+		CF32A35F2CA86D980046203E /* EmbossedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossedButton.swift; sourceTree = "<group>"; };
+		CF32A3612CA875080046203E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		CF32A3632CA879A10046203E /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		CF32A3662CA8D3D20046203E /* AddHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHistoryView.swift; sourceTree = "<group>"; };
+		CF32A3682CA8DD410046203E /* BarChartDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartDayView.swift; sourceTree = "<group>"; };
+		CF32A36A2CA8E7090046203E /* BarChartWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWeekView.swift; sourceTree = "<group>"; };
+		CF383ADC2CA7727700CBF630 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		CFD0F1532C9257D5007C3985 /* HIIFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIIFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD0F1562C9257D5007C3985 /* HIIFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIIFitApp.swift; sourceTree = "<group>"; };
 		CFD0F1582C9257D5007C3985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +139,17 @@
 				CF0D2E0C2C93390400B1F3C3 /* HistoryStore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CF32A3652CA8D3B00046203E /* History Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D2E082C93361000B1F3C3 /* HistoryView.swift */,
+				CF32A3662CA8D3D20046203E /* AddHistoryView.swift */,
+				CF32A3682CA8DD410046203E /* BarChartDayView.swift */,
+				CF32A36A2CA8E7090046203E /* BarChartWeekView.swift */,
+			);
+			path = "History Views";
 			sourceTree = "<group>";
 		};
 		CFD0F14A2C9257D5007C3985 = {
@@ -191,8 +220,14 @@
 				CFD0F1802C925995007C3985 /* WelcomeView.swift */,
 				CFD0F1822C92599E007C3985 /* ExerciseView.swift */,
 				CF0D2E112C93527700B1F3C3 /* SuccessView.swift */,
+				CF383ADC2CA7727700CBF630 /* TimerView.swift */,
 				CF0D2E042C93342D00B1F3C3 /* RatingView.swift */,
-				CF0D2E082C93361000B1F3C3 /* HistoryView.swift */,
+				CF32A35F2CA86D980046203E /* EmbossedButton.swift */,
+				CF32A35D2CA861140046203E /* RaisedButton.swift */,
+				CF32A3612CA875080046203E /* ContainerView.swift */,
+				CF32A3632CA879A10046203E /* GradientBackground.swift */,
+				CF32A35B2CA8560E0046203E /* WelcomeImages.swift */,
+				CF32A3652CA8D3B00046203E /* History Views */,
 				CF0D2E062C93350400B1F3C3 /* VideoPlayerView.swift */,
 				CF0D2DEF2C932C7D00B1F3C3 /* HeaderView.swift */,
 			);
@@ -333,20 +368,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF32A3672CA8D3D20046203E /* AddHistoryView.swift in Sources */,
+				CF32A35C2CA8560E0046203E /* WelcomeImages.swift in Sources */,
+				CF383ADD2CA7727700CBF630 /* TimerView.swift in Sources */,
 				CF0D2DF02C932C7D00B1F3C3 /* HeaderView.swift in Sources */,
 				CF0D2E0A2C93380800B1F3C3 /* DateExtension.swift in Sources */,
 				CFD0F1832C92599E007C3985 /* ExerciseView.swift in Sources */,
+				CF32A3642CA879A10046203E /* GradientBackground.swift in Sources */,
 				CFD0F1592C9257D5007C3985 /* ContentView.swift in Sources */,
 				CF0D2E0D2C93390400B1F3C3 /* HistoryStore.swift in Sources */,
 				CF0D2E102C933A7400B1F3C3 /* HistoryStoreDevData.swift in Sources */,
 				CF0D2E122C93527700B1F3C3 /* SuccessView.swift in Sources */,
 				CFD0F1812C925995007C3985 /* WelcomeView.swift in Sources */,
+				CF32A35E2CA861140046203E /* RaisedButton.swift in Sources */,
 				CFD0F1572C9257D5007C3985 /* HIIFitApp.swift in Sources */,
 				CF0D2DF32C932D8F00B1F3C3 /* Exercise.swift in Sources */,
+				CF32A3622CA875080046203E /* ContainerView.swift in Sources */,
+				CF32A3692CA8DD410046203E /* BarChartDayView.swift in Sources */,
 				CF0D2E052C93342D00B1F3C3 /* RatingView.swift in Sources */,
 				CF0D2E092C93361000B1F3C3 /* HistoryView.swift in Sources */,
 				CF0D2E0B2C93381B00B1F3C3 /* ImageExtension.swift in Sources */,
+				CF32A36B2CA8E7090046203E /* BarChartWeekView.swift in Sources */,
 				CF0D2E072C93350400B1F3C3 /* VideoPlayerView.swift in Sources */,
+				CF32A3602CA86D980046203E /* EmbossedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
